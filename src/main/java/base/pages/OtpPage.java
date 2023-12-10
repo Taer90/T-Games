@@ -6,9 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class OtpPage extends BasePage {
-    public OtpPage() {
-        PageFactory.initElements(driverManager.getDriver(), this);
-    }
 
     @FindBy(xpath = "//form[@class='app__login--form']/div/input[@class='app__login--verification'][1]")
     private WebElement otpField1;

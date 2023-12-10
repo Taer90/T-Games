@@ -5,9 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage {
-    public LoginPage() {
-        PageFactory.initElements(driverManager.getDriver(), this);
-    }
 
     @FindBy(xpath = "//input[@type='text']")
     private WebElement emailField;
